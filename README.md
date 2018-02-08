@@ -19,5 +19,4 @@ To setup you RStudio startup follow this 4 steps:
     3. Change the path for Base.R accordingly in .Rprofile.
     4. Now you may add functions, which you want to load automatically, in your Base.R. !!!Done!!!
     
-In "RStudio -> Tools -> GlobalOptions -> General -> Default Working Directory”, you can find the source of your packages, usually the Library folder. You may want to copy it to the cloud as well if you use different computers and want to use the same packages. In order to sync so to say you R packages, just copy it to your cloud and change the Default Working Directory accordingly. !!!Afterwards!!! you can delete the library on the local machine.
-
+In "RStudio -> Tools -> GlobalOptions -> General -> Default Working Directory”, you can find the source of your packages, usually the Library folder. You may want to copy it to the cloud as well if you use different computers and want to use the same packages. In order to sync so to say you R packages, just copy it to your cloud and change the Default Working Directory accordingly. !!!Afterwards you can delete the packages which are not part of base, i.e. the default installation, in the library on the local machine!!!
