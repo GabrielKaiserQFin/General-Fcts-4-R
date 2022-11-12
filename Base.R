@@ -61,13 +61,15 @@ getPackages <- function(x){
 }
 
 ###Update R, RStudio, Github,...
-#suppressPackageStartupMessages(library(installr))
+getPackages('installr')
 #updateR()
-#check.for.updates.R()
+if(check.for.updates.R(F,F)) {
+  check.for.updates.R()
+  }
 
 #do not save after q()
-# q <- function (save = "n", status = 0, runLast = TRUE)
-#   .Internal(quit(save, status, runLast))
+q <- function (save = "n", status = 0, runLast = TRUE)
+.Internal(quit(save, status, runLast))
 
 
 local({r <- getOption("repos")
